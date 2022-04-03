@@ -17,7 +17,6 @@ with open('help.txt', encoding='utf-8') as f:  # в файле help.txt соде
 @bot.command(aliases=['h'])  # команда помощи, выводит список всех команд бота
 async def help(ctx):
     global help_txt
-    print(help_txt)
     await ctx.send(embed=Embed(title='Команды бота:', description=''.join(help_txt), color=0x0077FF))
 
 
